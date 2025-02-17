@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ClientController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\ToyController;
 use App\Http\Controllers\UserController;
@@ -26,3 +27,5 @@ Route::get('/profiles', [UserController::class, 'profiles']);
 
 // Route::get('/student', [UserController::class, 'students']);
 Route::get('/student', [StudentController::class, 'studentshow']);
+
+Route::get('/client', [ClientController::class, 'index']);
