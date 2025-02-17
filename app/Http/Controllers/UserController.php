@@ -11,4 +11,9 @@ class UserController extends Controller
         $users = DB::select('select * from users');
         return view("toys.users", ['users' => $users]);
     }
+
+    public function students(){
+        $students = DB::select('select * from table_students');
+        return view('toys.student', compact('students'));
+    }
 }

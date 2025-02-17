@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\StudentController;
 use App\Http\Controllers\ToyController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -22,3 +23,6 @@ Route::get('/page', function(){
 
 Route::get('/users', [UserController::class, 'users']);
 Route::get('/profiles', [UserController::class, 'profiles']);
+
+// Route::get('/student', [UserController::class, 'students']);
+Route::get('/student', [StudentController::class, 'studentshow']);
