@@ -32,3 +32,5 @@ Route::get('/student', [StudentController::class, 'studentshow']);
 Route::get('/client', [ClientController::class, 'index']);
 
 Route::get('/citizen', [CitizenController::class, 'pasportshow']);
+
+Route::get('/post', [UserController::class, 'postshow']);
