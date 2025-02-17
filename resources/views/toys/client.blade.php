@@ -38,7 +38,7 @@
     </style>
 </head>
 <body>
-  <h1>DB Query</h1>
+  <h1>Hasmany throw Query</h1>
 
     <table>
         <thead>
@@ -57,11 +57,11 @@
                         {{$prod ->name}} <br>
                         @endforeach
                     </td>
-                    <td>
+                    {{-- <td>
                         @foreach($client -> products as $pro)
                         {{$pro ->name}} <br>
                         @endforeach
-                    </td>
+                    </td> --}}
                 </tr>
             @endforeach
         </tbody>

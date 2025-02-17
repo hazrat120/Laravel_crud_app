@@ -15,8 +15,8 @@ class ClientController extends Controller
         //
         //$client = Client::with('products')-> with('catagory')->get();
         $clients = Client::with('catagories')->get();
-        // return view('toys.client', compact('clients'));
-        return $clients;
+        return view('toys.client', compact('clients'));
+        // return $clients;
     }
 
     /**
